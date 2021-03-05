@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ *************************************************************
+  ~ 文件：left_fragment.xml
+  ~ 模块：MyApplication.app
+  ~ 项目：MyApplication
+  ~ 当前修改时间：2020年12月20日 21:30:33
+  ~ 上次修改时间：2020年12月20日 21:30:33
+  ~ 作者：Havi
+  ~ Copyright (c) 2020
+  ~ *************************************************************
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_button"
+        android:text="Button"/>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ *************************************************************
+  ~ 文件：right_fragment.xml
+  ~ 模块：MyApplication.app
+  ~ 项目：MyApplication
+  ~ 当前修改时间：2020年12月20日 21:31:20
+  ~ 上次修改时间：2020年12月20日 21:31:20
+  ~ 作者：Havi
+  ~ Copyright (c) 2020
+  ~ *************************************************************
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_text"
+        android:text="这是一个text"/>
+
+</LinearLayout>

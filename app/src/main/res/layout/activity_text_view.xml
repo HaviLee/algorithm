@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ *************************************************************
+  ~ 文件：activity_text_view.xml
+  ~ 模块：MyApplication.app
+  ~ 项目：MyApplication
+  ~ 当前修改时间：2020年12月10日 10:40:47
+  ~ 上次修改时间：2020年12月10日 10:40:46
+  ~ 作者：Havi
+  ~ Copyright (c) 2020
+  ~ *************************************************************
+  ~
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextViewActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:text="这是一个textview"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#00ff00"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showButton"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        android:text="ShowButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

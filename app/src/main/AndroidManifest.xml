@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.Activity">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 增加重启权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PermissionActivity"></activity>
+
+        <activity android:name=".文件保存.FilePersistenceActivity" />
+
+        <receiver
+            android:name=".强制下线.ForceOffLineReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.offline" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".强制下线.LoginActivity" />
+
+        <receiver
+            android:name=".BroadCast.LoalBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".BroadCast.MyOrderBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="200">
+                <action android:name="android.com.example.Activity.BroadCast.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BroadCast.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="200">
+                <action android:name="android.com.example.Activity.BroadCast.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BroadCast.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".News.NewsContentActivity" />
+        <activity android:name=".BroadCast.NetworkBroadcastManager" />
+        <activity android:name=".fragment.FragmentContainer" />
+        <activity android:name=".Message.MessageActivity" />
+        <activity android:name=".NinePatch" />
+        <activity android:name=".Fruit.RecyclerViewActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".TextViewActivity" />
+        <activity
+            android:name=".SingleTapActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".DialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            tools:ignore="MissingClass" />
+        <activity android:name=".NormalActivity" />
+        <activity android:name=".ThirdActivity">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

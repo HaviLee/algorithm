@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ *************************************************************
+  ~ 文件：activity_news_content.xml
+  ~ 模块：MyApplication.app
+  ~ 项目：MyApplication
+  ~ 当前修改时间：2020年12月22日 19:22:34
+  ~ 上次修改时间：2020年12月22日 19:22:34
+  ~ 作者：Havi
+  ~ Copyright (c) 2020
+  ~ *************************************************************
+  ~
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".News.NewsContentActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_content_fragment"
+        android:name="com.example.Activity.News.NewsContentFragment"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

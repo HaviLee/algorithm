@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ *************************************************************
+  ~ 文件：activity_single_tap.xml
+  ~ 模块：MyApplication.app
+  ~ 项目：MyApplication
+  ~ 当前修改时间：2020年12月09日 17:56:55
+  ~ 上次修改时间：2020年12月09日 17:56:54
+  ~ 作者：Havi
+  ~ Copyright (c) 2020
+  ~ *************************************************************
+  ~
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleTapActivity">
+<!--    <com.example.Activity.TitleLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/singleTap"-->
+<!--        android:text="singleTap"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/layout"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

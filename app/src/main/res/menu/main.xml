@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ *************************************************************
+  ~ 文件：main.xml
+  ~ 模块：app
+  ~ 项目：MyApplication
+  ~ 当前修改时间：2020年12月01日 16:43:59
+  ~ 上次修改时间：2020年12月01日 16:43:58
+  ~ 作者：Havi
+  ~ Copyright (c) 2020
+  ~ *************************************************************
+  ~
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/add_item" android:title="Add" />
+    <item android:title="Remove" android:id="@+id/remove_item" />
+
+</menu>
